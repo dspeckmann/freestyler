@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="team3.freestyler.MainMenuActivity">
+
+    <!-- Rapbutton-->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rap"
+        android:text="Start"
+        android:contentDescription="@string/RapButton"
+        android:onClick="buttonRapOnClick"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- Feedbackbutton-->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/feedback"
+        android:text="Feedback"
+        android:contentDescription="@string/FeedbackButton"
+        android:onClick="buttonFeedbackOnClick"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/wordpackages"
+        android:layout_alignParentStart="true" />
+
+    <!-- List of Raps Button-->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/listofraps"
+        android:text="List of raps"
+        android:contentDescription="@string/listofraps"
+        android:onClick="buttonListOfRapsOnClick"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/rap"
+        android:layout_alignParentStart="true" />
+
+    <!-- Word packages Button-->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/wordpackages"
+        android:text="Word packages"
+        android:contentDescription="@string/wordpackages"
+        android:onClick="buttonWordPackagesOnClick"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/listofraps"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
+

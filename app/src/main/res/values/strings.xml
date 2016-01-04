@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Freestyler</string>
+    <string name="errorNoClient">There is no email client installed.</string>
+    <string name="sendMail">Send Email</string>
+    <string name="mailSubject">Freestyler Feedback</string>
+    <string name="errorRecorderPreparation">An error occurred during MediaRecorder preparation.</string>
+    <string name="title_activity_game">Game</string>
+    <string name="title_activity_feedback">Feedback</string>
+    <string name="Rap">Rap</string>
+    <string name="RapButton">RapButton</string>
+    <string name="Feedback">Feedback</string>
+    <string name="FeedbackButton">FeedbackButton</string>
+    <string name="Beat">Beat</string>
+    <string name="Record">Record</string>
+    <string name="zur_Onlineumfrage">zur_Onlineumfrage</string>
+    <string name="Kommentare">Kommentare</string>
+    <string name="Kommentar_per_Mail_absenden">Kommentar_absenden</string>
+    <string name="ClickMe">ClickMe</string>
+    <string name="clickFunc">clickFunc</string>
+    <string name="Play">Play</string>
+    <string name="Stop">Stop</string>
+    <string name="Wort"></string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="comment">comment</string>
+    <string name="onlinesurvey">onlinesurvey</string>
+    <string name="title_activity_end">EndActivity</string>
+    <string name="listen_rap">listen_rap</string>
+    <string name="save_rap">save_rap</string>
+    <string name="mainmenu">mainmenu</string>
+    <string name="yourtime">Your time</string>
+    <string name="time">00:00</string>
+    <string name="listofraps">list of raps</string>
+    <string name="wordpackages">word packages</string>
+    <string name="save">save</string>
+</resources>

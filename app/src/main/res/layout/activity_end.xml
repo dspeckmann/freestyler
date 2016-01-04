@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="team3.freestyler.EndActivity">
+
+    <!-- Listen to rap Button-->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/listenrap"
+        android:contentDescription="@string/listen_rap"
+        android:text="Play rap"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="buttonListenToRapOnClick"
+        android:layout_below="@+id/time"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Save rap Button-->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/saverap"
+        android:contentDescription="@string/save_rap"
+        android:text="Save rap"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="buttonSaveRapOnClick"
+        android:layout_below="@+id/listenrap"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Main menu Button-->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/mainmenu"
+        android:contentDescription="@string/mainmenu"
+        android:text="Back to menu"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="buttonMainMenuOnClick"
+        android:layout_below="@+id/saverap" />
+
+    <!--Your Time Text-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yourtime"
+        android:id="@+id/yourtime"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <!--Time Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time"
+        android:id="@+id/time"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_below="@+id/yourtime"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

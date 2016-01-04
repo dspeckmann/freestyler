@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="team3.freestyler">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconlogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainMenuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RapActivity" android:label="Rap" />
+        <activity android:name=".FeedbackActivity" android:label="Feedback" />
+        <activity android:name=".WordPackagesActivity" android:label="Word packages" />
+        <activity android:name=".ListOfRapsActivity" android:label="List of raps" />
+        <activity android:name=".EndActivity" android:label="Finished" />
+
+        <service android:name=".AudioService" />
+    </application>
+
+</manifest>
