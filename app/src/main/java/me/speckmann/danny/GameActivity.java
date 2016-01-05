@@ -26,6 +26,7 @@ public class GameActivity extends AppCompatActivity {
     private AudioService audioService;
     private WordDataSource wordDataSouce;
     private Timer timer;
+    private boolean started = false;
     private ServiceConnection audioServiceConnection = new ServiceConnection() {
 
         @Override
@@ -63,7 +64,7 @@ public class GameActivity extends AppCompatActivity {
 
     public void buttonPlayOnClick(View v) {
         Button btnPlay = (Button) findViewById(R.id.play);
-        if (btnPlay.getText().equals("Start")) {
+        if (!started) {
             btnPlay.setText("Stop");
             String recordPath = getFilesDir().getAbsolutePath() + File.separator + "rap" +
                     GregorianCalendar.getInstance().getTimeInMillis() + ".3gp";
@@ -77,17 +78,33 @@ public class GameActivity extends AppCompatActivity {
             timer = new Timer();
             MyTimerTask myTimerTask = new MyTimerTask();
             timer.schedule(myTimerTask, 1000, 8000);
+            started = true;
         }
         else {
-            audioService.stopRecord();
-            if (timer != null) {
-                timer.cancel();
-            }
-            Intent intent = new Intent(this, EndActivity.class);
+            finishRecording();
+        }
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        if(started) {
+            finishRecording();
+        } else {
+            Intent intent = new Intent(this, MainMenuActivity.class);
             startActivity(intent);
             finish();
         }
+    }
 
+    private void finishRecording() {
+        audioService.stopRecord();
+        if (timer != null) {
+            timer.cancel();
+        }
+        Intent intent = new Intent(this, EndActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     class MyTimerTask extends TimerTask {

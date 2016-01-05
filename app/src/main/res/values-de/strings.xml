@@ -3,8 +3,6 @@
     <string name="app_name">Freestyler</string>
     <string name="error_missing_email_client">Es ist keine E-Mail-App installiert.</string>
     <string name="error_media_recorder_preparation">Es gab einen Fehler beim Vorbereiten des MediaRecorders.</string>
-    <string name="time">00:00</string>
-    <string name="yourtime">Deine Zeit</string>
     <string name="title_activity_game">Rap</string>
     <string name="title_activity_end">Fertig</string>
     <string name="title_activity_list">Deine Raps</string>
@@ -20,6 +18,7 @@
     <string name="rap_delete">Löschen</string>
     <string name="rap_save">Speichern</string>
     <string name="rap_saved_message">Dein Rap wurde gespeichert.</string>
+    <string name="rap_your_time">Deine Zeit</string>
     <string name="feedback_description">Dein Feedback ist uns sehr wichtig!</string>
     <string name="feedback_survey">Umfrage</string>
     <string name="feedback_email">E-Mail</string>

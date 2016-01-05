@@ -82,6 +82,15 @@ public class EndActivity extends AppCompatActivity {
     }
 
     public void buttonMainMenuOnClick(View v) {
+        deleteIfNotSavedAndExit();
+    }
+
+    @Override
+    public void onBackPressed() {
+        deleteIfNotSavedAndExit();
+    }
+
+    private void deleteIfNotSavedAndExit() {
         if(!saved) {
             File file = new File(audioService.getRap().getPath());
             file.delete();
@@ -89,13 +98,6 @@ public class EndActivity extends AppCompatActivity {
         }
         Intent intent = new Intent(this, MainMenuActivity.class);
         startActivity(intent);
-        finish();
-    }
-
-    @Override
-    public void onBackPressed() {
-        Intent i = new Intent(this, MainMenuActivity.class);
-        startActivity(i);
         finish();
     }
 }
