@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">Freestyler</string>
-    <string name="errorNoClient">There is no email client installed.</string>
+    <string name="error_missing_email_client">There is no e-mail client installed.</string>
     <string name="sendMail">Send Email</string>
     <string name="mailSubject">Freestyler Feedback</string>
     <string name="errorRecorderPreparation">An error occurred during MediaRecorder preparation.</string>
-    <string name="title_activity_game">Game</string>
+    <string name="title_activity_game">Rap</string>
     <string name="title_activity_feedback">Feedback</string>
     <string name="Rap">Rap</string>
     <string name="RapButton">RapButton</string>
@@ -20,10 +20,8 @@
     <string name="Play">Play</string>
     <string name="Stop">Stop</string>
     <string name="Wort"></string>
-    <string name="title_activity_test">TestActivity</string>
-    <string name="comment">comment</string>
     <string name="onlinesurvey">onlinesurvey</string>
-    <string name="title_activity_end">EndActivity</string>
+    <string name="title_activity_end">Finished</string>
     <string name="listen_rap">listen_rap</string>
     <string name="save_rap">save_rap</string>
     <string name="mainmenu">mainmenu</string>
@@ -32,4 +30,18 @@
     <string name="listofraps">list of raps</string>
     <string name="wordpackages">word packages</string>
     <string name="save">save</string>
+    <string name="rap_play">Play</string>
+    <string name="rap_delete">Delete</string>
+    <string name="rap_start">Start</string>
+    <string name="menu_word_packages">Word packages</string>
+    <string name="menu_start">Start</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_list">Your raps</string>
+    <string name="feedback_survey">Survey</string>
+    <string name="feedback_email">E-mail</string>
+    <string name="rap_save">Save </string>
+    <string name="menu_back">Back to main menu</string>
+    <string name="title_activity_wordpackages">Word packages</string>
+    <string name="title_activity_list">Your raps</string>
+    <string name="feedback_description">Your feedback is really important to us!</string>
 </resources>

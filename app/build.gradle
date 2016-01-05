@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "team3.freestyler"
+        applicationId "me.speckmann.danny.freestyler"
         minSdkVersion 19
         targetSdkVersion 23
         versionCode 1

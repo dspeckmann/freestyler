@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_missing_email_client">Es ist keine E-Mail-App installiert.</string>
+    <string name="rap_play">Abspielen</string>
+    <string name="rap_delete">Löschen</string>
+    <string name="rap_start">Start</string>
+    <string name="menu_word_packages">Wortpakete</string>
+    <string name="menu_start">Start</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_list">Deine Raps</string>
+    <string name="app_name" translatable="false">Freestyler</string>
+    <string name="feedback_survey">Umfrage</string>
+    <string name="feedback_email">E-Mail</string>
+    <string name="rap_save">Speichern</string>
+    <string name="time">00:00</string>
+    <string name="menu_back">Zurück zum Hauptmenü</string>
+    <string name="title_activity_end">Fertig</string>
+    <string name="title_activity_feedback">Feedback</string>
+    <string name="title_activity_game">Rap</string>
+    <string name="title_activity_wordpackages">Wortpakete</string>
+    <string name="title_activity_list">Deine Raps</string>
+    <string name="yourtime">Deine Zeit</string>
+    <string name="feedback_description">Dein Feedback ist uns sehr wichtig!</string>
+</resources>

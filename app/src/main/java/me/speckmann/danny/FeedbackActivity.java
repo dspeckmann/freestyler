@@ -1,14 +1,12 @@
-package team3.freestyler;
+package me.speckmann.danny;
 
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.animation.AlphaAnimation;
 import android.widget.Toast;
 
 
@@ -53,7 +51,7 @@ public class FeedbackActivity extends AppCompatActivity {
             startActivity(emailIntent);
         }
         catch (android.content.ActivityNotFoundException ex) {
-            String s = res.getString(R.string.errorNoClient);
+            String s = res.getString(R.string.error_missing_email_client);
             Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
         }
     }

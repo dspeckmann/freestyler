@@ -1,12 +1,10 @@
-package team3.freestyler;
+package me.speckmann.danny;
 
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.app.Activity;
 import android.content.Intent;
-import android.view.animation.AlphaAnimation;
 
 
 /**
@@ -31,7 +29,7 @@ public class MainMenuActivity extends AppCompatActivity {
     }
 
     public void buttonRapOnClick(View v) {
-        Intent intent = new Intent(this, RapActivity.class);
+        Intent intent = new Intent(this, GameActivity.class);
         startActivity(intent);
     }
 

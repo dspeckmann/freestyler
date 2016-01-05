@@ -1,9 +1,8 @@
-package team3.freestyler;
+package me.speckmann.danny;
 
 
 import android.app.Activity;
 import android.content.Context;
-import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.util.Log;
@@ -37,12 +36,6 @@ public class RapAdapter extends ArrayAdapter <Rap>{
         TextView name = (TextView) convertView.findViewById(R.id.textView1);
         name.setText(modelItems[position].toString());
         Button delete = (Button) convertView.findViewById(R.id.button1);
-
-        /*
-        String fontPath = "fonts/Simpsonfont.ttf";
-        Typeface tf = Typeface.createFromAsset(context.getAssets(), fontPath);
-        name.setTypeface(tf);
-        */
 
         delete.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

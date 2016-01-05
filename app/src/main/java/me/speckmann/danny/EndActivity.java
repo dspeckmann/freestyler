@@ -1,20 +1,19 @@
-package team3.freestyler;
+package me.speckmann.danny;
 
 
-import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.ServiceConnection;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
-import android.view.animation.AlphaAnimation;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -81,6 +80,9 @@ public class EndActivity extends AppCompatActivity {
     }
 
     public void buttonMainMenuOnClick(View v) {
+        File file = new File(audioService.getRap().getPath());
+        file.delete();
+        Log.d("[FreeStyler]", "Rap wurde erfolgreich aus dem Dateisystem gelöscht.");
         Intent intent = new Intent(this, MainMenuActivity.class);
         startActivity(intent);
         finish();

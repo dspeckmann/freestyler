@@ -1,8 +1,7 @@
-package team3.freestyler;
+package me.speckmann.danny;
 
 
 import android.os.Bundle;
-import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 

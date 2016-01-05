@@ -1,19 +1,13 @@
-package team3.freestyler;
+package me.speckmann.danny;
 
 
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.ServiceConnection;
-import android.graphics.Bitmap;
-import android.graphics.Typeface;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.app.Activity;
 import android.os.IBinder;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.animation.AlphaAnimation;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -27,7 +21,7 @@ import java.util.TimerTask;
 /**
  * Diese Activity ermöglicht es dem User, das Spiel zu starten und einen Rap aufzunehmen.
  */
-public class RapActivity extends AppCompatActivity {
+public class GameActivity extends AppCompatActivity {
 
     private AudioService audioService;
     private WordDataSource wordDataSouce;
@@ -47,7 +41,7 @@ public class RapActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rap);
+        setContentView(R.layout.activity_game);
         wordDataSouce = new WordDataSource(this);
     }
 
@@ -69,11 +63,8 @@ public class RapActivity extends AppCompatActivity {
 
     public void buttonPlayOnClick(View v) {
         Button btnPlay = (Button) findViewById(R.id.play);
-        Drawable drawPlay = getDrawable(R.drawable.buttonplay);
-        Bitmap bitmapPlay = ((BitmapDrawable)drawPlay).getBitmap();
-        Bitmap bitmapButton = ((BitmapDrawable)btnPlay.getBackground()).getBitmap();
-        if (bitmapButton == bitmapPlay) {
-            btnPlay.setBackgroundResource(R.drawable.buttonstop);
+        if (btnPlay.getText().equals("Start")) {
+            btnPlay.setText("Stop");
             String recordPath = getFilesDir().getAbsolutePath() + File.separator + "rap" +
                     GregorianCalendar.getInstance().getTimeInMillis() + ".3gp";
             Beat beat = Beat.getTestBeat(this);

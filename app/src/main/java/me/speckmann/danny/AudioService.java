@@ -1,4 +1,4 @@
-package team3.freestyler;
+package me.speckmann.danny;
 
 
 import android.app.Service;

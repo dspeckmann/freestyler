@@ -7,17 +7,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="team3.freestyler.EndActivity">
+    tools:context="me.speckmann.danny.EndActivity">
 
     <!-- Listen to rap Button-->
     <Button
         android:layout_width="fill_parent"
         android:layout_height="50dp"
         android:id="@+id/listenrap"
-        android:contentDescription="@string/listen_rap"
-        android:text="Play rap"
+        android:text="@string/rap_play"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="0dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:onClick="buttonListenToRapOnClick"
@@ -30,9 +28,8 @@
         android:layout_height="50dp"
         android:id="@+id/saverap"
         android:contentDescription="@string/save_rap"
-        android:text="Save rap"
+        android:text="@string/rap_save"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="0dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:onClick="buttonSaveRapOnClick"
@@ -45,9 +42,8 @@
         android:layout_height="50dp"
         android:id="@+id/mainmenu"
         android:contentDescription="@string/mainmenu"
-        android:text="Back to menu"
+        android:text="@string/menu_back"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="0dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:onClick="buttonMainMenuOnClick"
@@ -60,7 +56,6 @@
         android:text="@string/yourtime"
         android:id="@+id/yourtime"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="0dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
     <!--Time Text -->

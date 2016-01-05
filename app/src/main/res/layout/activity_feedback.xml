@@ -7,35 +7,40 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="team3.freestyler.FeedbackActivity">
+    tools:context="me.speckmann.danny.FeedbackActivity">
 
     <!-- Onlineumfrage Button-->
     <Button
         android:layout_width="fill_parent"
         android:layout_height="50dp"
         android:id="@+id/button1"
-        android:contentDescription="@string/onlinesurvey"
-        android:text="Survey"
+        android:text="@string/feedback_survey"
         android:onClick="buttonSurveyOnClick"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="0dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true" />
 
     <!-- Kommentar per Mail absenden Button-->
     <Button
         android:layout_width="fill_parent"
         android:layout_height="50dp"
         android:id="@+id/button2"
-        android:contentDescription="@string/comment"
         android:onClick="buttonSendFeedbackOnClick"
-        android:text="Feedback"
+        android:text="@string/feedback_email"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="0dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_below="@+id/button1"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feedback_description"
+        android:id="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

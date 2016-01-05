@@ -1,7 +1,6 @@
-package team3.freestyler;
+package me.speckmann.danny;
 
 
-import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.ServiceConnection;
