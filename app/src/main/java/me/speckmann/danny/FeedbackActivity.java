@@ -38,7 +38,7 @@ public class FeedbackActivity extends AppCompatActivity {
         Resources res = getResources();
 
         String[] TO = { "swefreestyler@gmail.com" };
-        String subject = res.getString(R.string.mailSubject);
+        String subject = res.getString(R.string.feedback_email_subject);
         Intent emailIntent = new Intent(Intent.ACTION_VIEW);
 
         emailIntent.setData(Uri.parse("mailto:?subject=" + "" + "&body=" + "" + "&to=" + ""));

@@ -85,7 +85,7 @@ public class AudioService extends Service {
                 try {
                     mediaRecorder.prepare();
                 } catch (IOException ex) {
-                    String errorMessage = getResources().getString(R.string.errorRecorderPreparation);
+                    String errorMessage = getResources().getString(R.string.error_media_recorder_preparation);
                     Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show();
                 }
                 mediaRecorder.start();
@@ -98,6 +98,8 @@ public class AudioService extends Service {
                 break;
         }
     }
+
+    // TODO: Split start/stop functions
 
     /**
      * Stoppt die Aufnahme, wenn sie läuft.

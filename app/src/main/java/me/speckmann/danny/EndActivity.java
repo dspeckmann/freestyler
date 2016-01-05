@@ -24,6 +24,7 @@ import java.util.Date;
  */
 public class EndActivity extends AppCompatActivity {
 
+    private boolean saved = false;
     private AudioService audioService;
     private ServiceConnection ioConnection = new ServiceConnection() {
 
@@ -76,13 +77,16 @@ public class EndActivity extends AppCompatActivity {
         rapDataSource.close();
         Button btnSave = (Button)findViewById(R.id.saverap);
         btnSave.setEnabled(false);
-        Toast.makeText(this, "Your rap has been saved!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.rap_saved_message), Toast.LENGTH_SHORT).show();
+        saved = true;
     }
 
     public void buttonMainMenuOnClick(View v) {
-        File file = new File(audioService.getRap().getPath());
-        file.delete();
-        Log.d("[FreeStyler]", "Rap wurde erfolgreich aus dem Dateisystem gelöscht.");
+        if(!saved) {
+            File file = new File(audioService.getRap().getPath());
+            file.delete();
+            Log.d("[FreeStyler]", "Rap wurde erfolgreich aus dem Dateisystem gelöscht.");
+        }
         Intent intent = new Intent(this, MainMenuActivity.class);
         startActivity(intent);
         finish();
