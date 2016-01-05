@@ -3,35 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingTop="10dp"
     tools:context="me.speckmann.danny.FeedbackActivity">
 
     <!-- Onlineumfrage Button-->
     <Button
         android:layout_width="fill_parent"
-        android:layout_height="50dp"
+        android:layout_height="80dp"
         android:id="@+id/button1"
         android:text="@string/feedback_survey"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/button_menu"
         android:onClick="buttonSurveyOnClick"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/button2"
         android:layout_centerHorizontal="true" />
 
     <!-- Kommentar per Mail absenden Button-->
     <Button
         android:layout_width="fill_parent"
-        android:layout_height="50dp"
+        android:layout_height="80dp"
         android:id="@+id/button2"
         android:onClick="buttonSendFeedbackOnClick"
         android:text="@string/feedback_email"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/button_menu"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 
@@ -40,7 +37,7 @@
         android:layout_height="wrap_content"
         android:text="@string/feedback_description"
         android:id="@+id/textView"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

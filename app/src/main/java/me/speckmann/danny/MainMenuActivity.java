@@ -1,10 +1,16 @@
 package me.speckmann.danny;
 
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.TypefaceSpan;
 import android.view.View;
 import android.content.Intent;
+import android.widget.Button;
 
 
 /**
